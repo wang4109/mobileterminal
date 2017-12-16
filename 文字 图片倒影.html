@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>CSS3动画</title>
+		<style>
+		<script src="js/scrollReveal.js"></script>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		div img{
+			-webkit-box-reflect: right 1px -webkit-gradient(linear, 0% 100%,100% 100%, from(rgba(0,0,0,0)), to(red));
+		}
+		p{
+		    -webkit-box-reflect: below 1px -webkit-gradient(linear, 0 0, 0 100%, from(transparent), color-stop(.5, transparent), to(rgba(3,3,3,.2)));
+
+    background: -webkit-linear-gradient(top, rgba(174,188,191,1) 0%,rgba(110,119,116,1) 50%,rgba(10,14,10,1) 51%,rgba(10,8,9,1) 100%);
+
+    -webkit-background-clip: text;-webkit-text-fill-color: teal;
+		   margin-top: 40px;
+		}
+		.head{
+			width: 200px;
+			height: 200px;
+			background-color: teal;
+			display: flex;
+    		justify-content: center;
+   		 	align-items: center;
+		}
+		.center{
+			width: 100px;
+			height: 100px;
+			background-color: red;
+		}
+		</style>
+	</head>
+	<body>
+		<div id="head"><a href="#footter">到底部</a></div>
+		<div data-scroll-reveal="enter left and move 50px over 1.33s"><img src="img/1.jpg"/></div>
+		<div data-scroll-reveal="enter from the bottom after 1s"><img src="img/2 (1).jpg"/></div>
+		<div data-scroll-reveal="wait 2.5s and then ease-in-out 100px"><img src="img/3 (1).jpg"/></div>
+		<div data-scroll-reveal="wait 0.3s, then enter left and move 40px over 2s"><img src="img/4 (1).jpg"/></div>
+		<div data-scroll-reveal="enter from the left after 0.3s, move 40px, over 2s"><img src="img/5 (1).jpg"/></div>
+		<div data-scroll-reveal="enter left move 40px over 2s after 0.3s"><img src="img/6.jpg"/></div>
+		<div data-scroll-reveal="enter left, move 40px, over 2s, wait 0.3s"><img src="img/8.jpg"/></div>
+		<div class="wow slideInLeft" data-wow-duration="2s" data-wow-delay="5s"></div>
+		<div class="wow slideInRight" data-wow-offset="10"  data-wow-iteration="10"><img src="img/1.jpg"/></div>
+		<div class="wow slideInLeft" data-wow-duration="2s" data-wow-delay="5s"><img src="img/2 (1).jpg"/></div>
+		<div id="footter"><a href="#head">回到顶部</a></div>
+		<p style="color: red;">dohalfh odaew ssdd</p>
+		<div class="head">
+			<div class="center"></div>
+		</div>
+	</body>
+</html>

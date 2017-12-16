@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+			<style>
+			    *{ padding:0;margin:0;font-size:14px; }
+			    .d{
+			        width: 80px;height:80px;border-radius:50%;position:relative;margin: 50px auto;
+			        background-color: #b7e9ee; box-shadow: 0 0 5px,0 0 10px #0ab;text-align:center;line-height:80px;
+			    }
+			    .small-pian{
+			        width: 50px;height:50px;position:absolute;margin: auto;top:0;bottom:0;left:0;right:0;
+			        animation: run 4s linear infinite;
+			    }
+			    .small-pian .small-p{
+			        width: 10px;height:10px;position:absolute;top:20px;border-radius:50%;
+			    }
+			    .small-pian .p1{
+			        background-color: #ff7e08;left:80px;
+			    }
+			    .small-pian .p2{
+			        background-color: #ff0853;right:80px;
+			    }
+			    @keyframes run{
+			        0%{
+			            transform: rotateZ(0deg);
+			        }
+			        100%{
+			            transform: rotateZ(360deg);
+			        }
+			    }
+			</style>
+</head>
+<body>
+    <div class="d">Hello
+        <div class="small-pian">
+            <div class="small-p p1"></div>
+            <div class="small-p p2"></div>
+        </div>
+    </div>
+    <div class="d">Hello
+        <div class="small-pian">
+            <div class="small-p p2"></div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>旋转风车</title>
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			body{
+				background-color: lightblue;
+			}
+			.box{
+				margin: 100px;
+				width: 200px;
+				height: 200px;
+				border: 100px solid teal;
+				border-bottom-color: darkmagenta;
+				border-left-color: aqua;
+				border-right-color: mediumspringgreen;
+				border-radius: 50%;
+				-webkit-animation :circle 1.5s infinite linear;
+			}
+			@-webkit-keyframes circle{
+				0%{
+					-webkit-transform: rotate(0deg);
+				}
+				100%{
+					-webkit-transform: rotate(-360deg);
+				}
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div class="box"></div>
+	</body>
+</html>
